@@ -1,0 +1,27 @@
+﻿@model List<BackEnd_ejemplo1.Models.Pelicula>
+
+@{
+    ViewBag.Title = "MuestraPelicula";
+}
+
+<h2>MuestraPelicula</h2>
+
+<table class="table table-striped">
+    <thead>
+        <th>Titulo</th>
+        <th>Duración</th>
+        <th>Pais</th>
+        <th>Lanzamiento</th>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Titulo</td>
+                <td>@item.Duracion</td>
+                <td>@item.Pais</td>
+                <td>@item.Publicacion</td>
+            </tr>}
+        
+    </tbody>
+</table>
